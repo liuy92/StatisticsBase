@@ -124,7 +124,8 @@ DFS搜索策略：
   2. 递归的访问其没被标记过的所有邻居顶点
 性质：
   1. 深度优先搜索标记与起点连通的所有顶点的搜索时间同顶点的度数之和成正比
-  2. 
+  2. DFS从给定起点到任意顶点所需的时间和路径长度成正比
+  3. 其得到的路径取决于图的结构+图的表示+递归的调用
 """
 def depthSearch(Graph, start, end):
     V = Graph.keys()
@@ -175,4 +176,7 @@ def depthSearch(Graph, start):
         if v != start:
             for x in edgeTo[]
 
-depthSearch(b, 0, 4)
+"""
+广度优先搜索(BFS)：
+目的：单点最短路径
+"""
